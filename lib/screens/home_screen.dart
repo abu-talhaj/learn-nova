@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:learn_nova/const/all_colors/all_colors.dart';
 import 'package:learn_nova/const/font_sizes/all_font_size.dart';
+import 'package:learn_nova/screens/search_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -60,7 +62,9 @@ class _HomeScreenState extends State<HomeScreen>
                     ),
                   ),
                   IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Get.to(SearchScreen());
+                    },
                     icon: Icon(Icons.search, color: Colors.black54),
                   ),
                 ],

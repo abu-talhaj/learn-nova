@@ -31,6 +31,23 @@ class _VideoLibraryScreenState extends State<VideoLibraryScreen> {
             padding: const EdgeInsets.all(10.0),
             child: Column(
               children: [
+                SizedBox(height: 40.h),
+                Column(
+                  children: [
+                    Align(
+                      alignment: Alignment.topRight,
+                      child: Container(
+                        height: 44.h,
+                        width: 44.w,
+                        decoration: BoxDecoration(
+                          color: Colors.white12,
+                          borderRadius: BorderRadius.circular(10).r,
+                        ),
+                        child: Icon(Icons.search, color: Colors.white),
+                      ),
+                    ),
+                  ],
+                ),
                 SizedBox(height: 680.h),
                 Row(
                   children: [
